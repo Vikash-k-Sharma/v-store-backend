@@ -1,6 +1,4 @@
-import jsonServer from 'json-server'
-import { readFileSync } from 'fs'
-
+const jsonServer = require('json-server')
 const app = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
